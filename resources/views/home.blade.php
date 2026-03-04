@@ -30,7 +30,7 @@
     <!-- Conciertos -->
     <div class="col-md-4">
         <div class="card card-soft h-100">
-            <img class="card-img-top" src="{{ asset('img/conciertos.png') }}" alt="Conciertos">
+            <img class="card-img-top" src="{{ asset('img/principal/conciertos.png') }}" alt="Conciertos">
             <div class="card-body text-center">
                 <h5 class="fw-bold">Conciertos</h5>
                 <p class="text-muted mb-3">Descubre los próximos conciertos y eventos musicales.</p>
@@ -42,7 +42,7 @@
     <!-- Artistas -->
     <div class="col-md-4">
         <div class="card card-soft h-100">
-            <img class="card-img-top" src="{{ asset('img/artistas.png') }}" alt="Artistas">
+            <img class="card-img-top" src="{{ asset('img/principal/artistas.png') }}" alt="Artistas">
             <div class="card-body text-center">
                 <h5 class="fw-bold">Artistas</h5>
                 <p class="text-muted mb-3">Conoce a los artistas que estarán presentes en los eventos.</p>
@@ -54,7 +54,7 @@
     <!-- Boletos -->
     <div class="col-md-4">
         <div class="card card-soft h-100">
-            <img class="card-img-top" src="{{ asset('img/boletos.png') }}" alt="Boletos">
+            <img class="card-img-top" src="{{ asset('img/principal/boletos.png') }}" alt="Boletos">
             <div class="card-body text-center">
                 <h5 class="fw-bold">Boletos</h5>
                 <p class="text-muted mb-3">Consulta tipos de boletos disponibles para cada concierto.</p>

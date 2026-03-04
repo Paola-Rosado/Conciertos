@@ -36,7 +36,7 @@
 </style>
 
 <div class="container">
-    <h2 class="text-center mb-4">Artistas Destacados</h2>
+    <h2 class="section-title text-center mb-4">Artistas Destacados</h2>
 
     <div class="row g-4 justify-content-center">
 

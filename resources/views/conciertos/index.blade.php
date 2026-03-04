@@ -3,7 +3,7 @@
 @section('contenido')
 <div class="container">
 
-    <h2 class="text-center mb-4">Próximos conciertos</h2>
+    <h2 class="section-title text-center mb-4">Próximos conciertos</h2>
     <p class="text-center text-muted mb-5">
         Descubre eventos, fechas y sedes. Elige tu favorito y revisa detalles.
     </p>

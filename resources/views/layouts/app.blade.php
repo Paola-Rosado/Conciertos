@@ -225,11 +225,11 @@
     </style>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     @include('components.header')
 
-    <main class="container my-4">
+    <main class="container my-4 flex-fill">
         @yield('contenido')
     </main>
 

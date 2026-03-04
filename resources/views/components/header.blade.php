@@ -2,9 +2,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container">
         <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="{{ route('home') }}">
-            {{-- si tienes logo: public/img/logo.png --}}
-            {{-- <img src="{{ asset('img/logo.png') }}" alt="Logo" width="34" height="34" class="rounded"> --}}
-            Conciertos
+            <img src="{{ asset('img/logoo.jpg') }}" alt="Logo" width="70" height="70" class="rounded"> 
+            TConciertos
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
