@@ -2,7 +2,7 @@
 
 @section('contenido')
 <div class="p-5 bg-white rounded shadow text-center">
-  <h1 class="section-title">ConciertoHub</h1>
+  <h1 class="section-title">Concierto</h1>
   <p class="lead">Explora conciertos, artistas y tipos de boletos.</p>
 
   <div class="d-flex justify-content-center gap-3 mt-3">
