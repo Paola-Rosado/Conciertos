@@ -1,99 +1,82 @@
 @extends('layouts.app')
 
-@section('title','Conciertos')
-
 @section('contenido')
+<div class="container">
 
-<div class="text-center mb-4">
-    <h1 class="page-title">Próximos conciertos</h1>
-    <div class="title-accent"></div>
-    <p class="text-muted mt-2">
+    <h2 class="text-center mb-4">Próximos conciertos</h2>
+    <p class="text-center text-muted mb-5">
         Descubre eventos, fechas y sedes. Elige tu favorito y revisa detalles.
     </p>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- Bad Bunny -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-wrap">
+                    <img src="{{ asset('img/conciertos/badbunny.png') }}" alt="Bad Bunny">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Bad Bunny World Tour</h5>
+                    <span class="badge bg-primary">Sáb 15 junio • 9:00 PM</span>
+                    <span class="badge bg-info text-dark">Estadio Azteca • CDMX</span>
+
+                    <p class="mt-3">
+                        El fenómeno global del reggaetón llega con su gira mundial
+                        interpretando sus mayores éxitos y una producción espectacular.
+                    </p>
+
+                    <a href="#" class="btn btn-primary w-100">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shakira -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-wrap">
+                    <img src="{{ asset('img/conciertos/shakira.jpg') }}" alt="Shakira">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Shakira - Las Mujeres Ya No Lloran Tour</h5>
+                    <span class="badge bg-primary">Vie 05 julio • 8:30 PM</span>
+                    <span class="badge bg-info text-dark">Foro Sol • CDMX</span>
+
+                    <p class="mt-3">
+                        Shakira regresa a los escenarios con un espectáculo lleno de
+                        energía, baile y todos sus grandes éxitos.
+                        "Las Mujeres no lloran, las Mujeres facturan"
+                    </p>
+
+                    <a href="#" class="btn btn-primary w-100">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latin Mafia -->
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-img-wrap">
+                    <img src="{{ asset('img/conciertos/LatinMafia.jpg') }}" alt="Latin Mafia">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">Latin Mafia Live</h5>
+                    <span class="badge bg-primary">Sáb 20 julio • 8:00 PM</span>
+                    <span class="badge bg-info text-dark">Auditorio Nacional • CDMX</span>
+
+                    <p class="mt-3">
+                        Latin Mafia llega con su sonido alternativo y urbano para
+                        ofrecer una noche única llena de emoción y música.
+                    </p>
+
+                    <a href="#" class="btn btn-primary w-100">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
-
-<div class="row g-4">
-
-    {{-- Ejemplo 1 --}}
-    <div class="col-md-4">
-        <div class="card-event h-100">
-            <img
-                src="{{ asset('img/conciertos/vibra-fest.jpg') }}"
-                class="event-img"
-                alt="Vibra Fest 2026"
-            >
-
-            <div class="p-4">
-                <h5 class="fw-bold mb-2">Vibra Fest 2026</h5>
-
-                <div class="d-flex gap-2 flex-wrap mb-3">
-                    <span class="badge badge-date">Sáb 21 marzo • 8:00 PM</span>
-                    <span class="badge badge-place">Foro Arena • Mérida</span>
-                </div>
-
-                <p class="text-muted mb-4">
-                    Un festival con artistas invitados, zona de comida y experiencias para fans.
-                </p>
-
-                <div class="d-flex gap-2">
-                    <a href="{{ url('/conciertos/vibra-fest-2026') }}" class="btn btn-brand w-100">Ver detalles</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- Ejemplo 2 --}}
-    <div class="col-md-4">
-        <div class="card-event h-100">
-            <img
-                src="{{ asset('img/conciertos/noches-indie.jpg') }}"
-                class="event-img"
-                alt="Noches de Indie"
-            >
-
-            <div class="p-4">
-                <h5 class="fw-bold mb-2">Noches de Indie</h5>
-
-                <div class="d-flex gap-2 flex-wrap mb-3">
-                    <span class="badge badge-date">Vie 05 abril • 7:30 PM</span>
-                    <span class="badge badge-place">Teatro al Aire Libre</span>
-                </div>
-
-                <p class="text-muted mb-4">
-                    Música indie, ambiente chill y bandas locales en una noche para cantar a gusto.
-                </p>
-
-               <a href="{{ url('/conciertos/vibra-fest-2026') }}" class="btn btn-brand w-100">Ver detalles</a>
-            </div>
-        </div>
-    </div>
-
-    {{-- Ejemplo 3 --}}
-    <div class="col-md-4">
-        <div class="card-event h-100">
-            <img
-                src="{{ asset('img/conciertos/electro-beach.jpg') }}"
-                class="event-img"
-                alt="Electro Beach Night"
-            >
-
-            <div class="p-4">
-                <h5 class="fw-bold mb-2">Electro Beach Night</h5>
-
-                <div class="d-flex gap-2 flex-wrap mb-3">
-                    <span class="badge badge-date">Sáb 13 abril • 9:00 PM</span>
-                    <span class="badge badge-place">Playa • Progreso</span>
-                </div>
-
-                <p class="text-muted mb-4">
-                    DJs invitados, zona VIP y show de luces junto al mar. Ideal para ir con amigos.
-                </p>
-
-                <a href="{{ url('/conciertos/electro-beach-night') }}" class="btn btn-brand w-100">Ver detalles</a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
 @endsection

@@ -7,7 +7,7 @@
   @foreach($tipos as $b)
     <div class="col-md-4">
       <div class="card shadow h-100 border-0">
-        <img src="{{ asset($b['imagen']) }}" class="card-img-top" alt="{{ $b['titulo'] }}">
+       <img src="{{ asset('img/boletos/bol.jpg') }}" class="card-img-top" alt="{{ $b['titulo'] }}">
         <div class="card-body">
           <h5>{{ $b['titulo'] }}</h5>
           <ul>

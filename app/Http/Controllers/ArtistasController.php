@@ -27,7 +27,7 @@ class ArtistasController extends Controller
 
     public function index()
     {
-        return view('artistas.index', ['artistas' => $this->artistas]);
+        return view('artistas.show', ['artistas' => $this->artistas]);
     }
 
     public function show($slug)
@@ -36,6 +36,6 @@ class ArtistasController extends Controller
             abort(404);
         }
 
-        return view('artistas.show', ['artista' => $this->artistas[$slug]]);
+        return view('artistas.index', ['artista' => $this->artistas[$slug]]);
     }
 }

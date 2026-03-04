@@ -44,7 +44,6 @@ class ConciertosController extends Controller
         ]);
     }
 
-    // DETALLE de un concierto
     public function show(string $slug)
     {
         abort_unless(isset($this->conciertos[$slug]), 404);

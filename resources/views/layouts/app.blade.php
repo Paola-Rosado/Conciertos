@@ -201,6 +201,27 @@
             background: var(--navy);
             color: rgba(255,255,255,.85);
         }
+
+        .card-img-wrap{
+    height: 240px;              /* mismo alto para todas */
+    background: #0b1b3a;        /* un fondo oscuro bonito */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.card-img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* IMPORTANTE: NO recorta */
+    object-position: center;
+    padding: 10px;              /* para que no pegue a bordes */
+    display: block;
+}
+
     </style>
 </head>
 
