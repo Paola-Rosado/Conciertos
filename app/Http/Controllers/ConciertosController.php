@@ -9,33 +9,33 @@ class ConciertosController extends Controller
     private array $conciertos = [
         'vibra-fest-2026' => [
             'titulo' => 'Vibra Fest 2026',
-            'imagen' => 'img/conciertos/vibra-fest-2026.jpg',
+            'imagen' => 'img/conciertos/badbunny.png',
             'descripcion' => 'Festival con artistas invitados, zona food trucks y experiencias VIP.',
             'fecha' => 'Sábado 21 de marzo',
             'hora' => '8:00 PM',
             'lugar' => 'Foro Arena - Mérida',
             'precio' => 'Desde $550 MXN',
-            'imagen' => 'img/conciertos/badbunny.png'
+
         ],
         'noches-de-indie' => [
             'titulo' => 'Noches de Indie',
-            'imagen' => 'img/conciertos/noches-de-indie.jpg',
+            'imagen' => 'img/conciertos/shakira.jpg',
             'descripcion' => 'Música indie, ambiente chill y bandas locales en una noche para cantar a gusto.',
             'fecha' => 'Viernes 05 de abril',
             'hora' => '7:30 PM',
             'lugar' => 'Teatro al Aire Libre',
             'precio' => 'Desde $320 MXN',
-            'imagen' => 'img/conciertos/shakira.jpg'
+
         ],
         'electro-beach-night' => [
             'titulo' => 'Electro Beach Night',
-            'imagen' => 'img/conciertos/electro-beach-night.jpg',
+            'imagen' => 'img/conciertos/LatinMafia.jpg',
             'descripcion' => 'DJs invitados, zona VIP y show de luces junto al mar. Ideal para ir con amigos.',
             'fecha' => 'Sábado 13 de abril',
             'hora' => '9:00 PM',
             'lugar' => 'Playa - Progreso',
             'precio' => 'Desde $450 MXN',
-            'imagen' => 'img/conciertos/LatinMafia.jpg'
+
         ],
     ];
 
