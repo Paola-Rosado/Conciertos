@@ -8,38 +8,33 @@ class ConciertosController extends Controller
 {
     private array $conciertos = [
         'vibra-fest-2026' => [
-            'titulo' => 'Vibra Fest 2026',
+            'titulo' => 'Bad Bunny World Tour',
             'imagen' => 'img/conciertos/badbunny.png',
-            'descripcion' => 'Festival con artistas invitados, zona food trucks y experiencias VIP.',
-            'fecha' => 'Sábado 21 de marzo',
-            'hora' => '8:00 PM',
-            'lugar' => 'Foro Arena - Mérida',
-            'precio' => 'Desde $550 MXN',
-
-        ],
-        'noches-de-indie' => [
-            'titulo' => 'Noches de Indie',
-            'imagen' => 'img/conciertos/shakira.jpg',
-            'descripcion' => 'Música indie, ambiente chill y bandas locales en una noche para cantar a gusto.',
-            'fecha' => 'Viernes 05 de abril',
-            'hora' => '7:30 PM',
-            'lugar' => 'Teatro al Aire Libre',
-            'precio' => 'Desde $320 MXN',
-
-        ],
-        'electro-beach-night' => [
-            'titulo' => 'Electro Beach Night',
-            'imagen' => 'img/conciertos/LatinMafia.jpg',
-            'descripcion' => 'DJs invitados, zona VIP y show de luces junto al mar. Ideal para ir con amigos.',
-            'fecha' => 'Sábado 13 de abril',
+            'descripcion' => 'El fenómeno global del reggaetón llega con su gira mundial interpretando sus mayores éxitos y una producción espectacular.',
+            'fecha' => 'Sábado 15 de junio',
             'hora' => '9:00 PM',
-            'lugar' => 'Playa - Progreso',
-            'precio' => 'Desde $450 MXN',
+            'lugar' => 'Estadio Azteca • CDMX',
+        ],
 
+        'noches-de-indie' => [
+            'titulo' => 'Shakira - Las Mujeres Ya No Lloran Tour',
+            'imagen' => 'img/conciertos/shakira.jpg',
+            'descripcion' => 'Shakira regresa a los escenarios con un espectáculo lleno de energía, baile y todos sus grandes éxitos. "Las Mujeres no lloran, las Mujeres facturan".',
+            'fecha' => 'Viernes 05 de julio',
+            'hora' => '8:30 PM',
+            'lugar' => 'Foro Sol • CDMX',
+        ],
+
+        'electro-beach-night' => [
+            'titulo' => 'Latin Mafia Live',
+            'imagen' => 'img/conciertos/LatinMafia.jpg',
+            'descripcion' => 'Latin Mafia llega con su sonido alternativo y urbano para ofrecer una noche única llena de emoción y música.',
+            'fecha' => 'Sábado 20 de julio',
+            'hora' => '8:00 PM',
+            'lugar' => 'Auditorio Nacional • CDMX',
         ],
     ];
 
-    // LISTA de conciertos
     public function index()
     {
         return view('conciertos.index', [

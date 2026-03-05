@@ -1,53 +1,70 @@
 @extends('layouts.app')
 
 @section('contenido')
+<div class="container py-3">
 
-<div class="container">
+    {{-- Card principal --}}
+    <div class="card shadow-lg border-0 overflow-hidden">
+        <div class="row g-0">
 
-    <div class="card shadow-lg border-0 p-4">
+            {{-- Imagen --}}
+           <div class="col-md-5 d-flex justify-content-center align-items-center">
 
-        <div class="row align-items-center">
+    <div class="imagen-concierto">
+        <img src="{{ asset($concierto['imagen']) }}"
+             alt="{{ $concierto['titulo'] }}">
+    </div>
 
-            <!-- Imagen -->
-            <div class="col-md-5 text-center">
-                <img src="{{ asset($concierto['imagen']) }}"
-                     class="img-fluid rounded shadow"
-                     style="max-height:350px; object-fit:cover;">
-            </div>
+</div>
 
-            <!-- Información -->
-            <div class="col-md-7">
+            {{-- Info --}}
+            <div class="col-md-7 p-4 p-lg-5">
 
-                <h2 class="fw-bold mb-3">
+                <h2 class="fw-bold mb-2">
                     {{ $concierto['titulo'] }}
                 </h2>
 
-                <p class="text-muted mb-4">
+                <p class="text-muted mb-3">
                     {{ $concierto['descripcion'] }}
                 </p>
 
-                <ul class="list-group mb-4">
+                {{-- Badges (resumen rápido) --}}
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span class="badge badge-date px-3 py-2">
+                        {{ $concierto['fecha'] }}
+                    </span>
 
-                    <li class="list-group-item">
-                        <strong>Fecha:</strong> {{ $concierto['fecha'] }}
-                    </li>
+                    <span class="badge badge-date px-3 py-2">
+                         {{ $concierto['hora'] }}
+                    </span>
 
-                    <li class="list-group-item">
-                        <strong>Hora:</strong> {{ $concierto['hora'] }}
-                    </li>
+                    <span class="badge badge-place px-3 py-2">
+                         {{ $concierto['lugar'] }} • {{ $concierto['ciudad'] ?? 'CDMX' }}
+                    </span>
 
-                    <li class="list-group-item">
-                        <strong>Lugar:</strong> {{ $concierto['lugar'] }}
-                    </li>
+                </div>
 
-                    <li class="list-group-item">
-                        <strong>Precio:</strong> {{ $concierto['precio'] }}
-                    </li>
+                {{-- Lista más formal --}}
+                <div class="bg-light rounded-4 p-3 mb-4" style="border:1px solid rgba(4,20,45,.08);">
+                    <div class="row">
+                        <div class="col-sm-6 mb-2">
+                            <strong>Fecha:</strong> {{ $concierto['fecha'] }}
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <strong>Hora:</strong> {{ $concierto['hora'] }}
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <strong>Lugar:</strong> {{ $concierto['lugar'] }}
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <strong>Ciudad:</strong> {{ $concierto['ciudad'] ?? 'CDMX' }}
+                        </div>
+        
+                    </div>
+                </div>
 
-                </ul>
-
-                <div class="d-flex gap-3">
-
+                {{-- Botones --}}
+                <div class="d-flex flex-wrap gap-2">
                     <a href="{{ route('boletos.index') }}" class="btn btn-brand">
                         Comprar boletos
                     </a>
@@ -55,35 +72,27 @@
                     <a href="{{ route('conciertos.index') }}" class="btn btn-outline-brand">
                         Volver a conciertos
                     </a>
-
                 </div>
 
             </div>
-
         </div>
-
     </div>
 
-
-    <!-- Información adicional -->
+    {{-- Card extra --}}
     <div class="card mt-4 shadow-sm border-0 p-4">
-
         <h4 class="fw-bold mb-3">Detalles del evento</h4>
 
-        <p>
-            Este concierto promete una experiencia única para los fans de la música en vivo.
-            El evento contará con producción de alta calidad, luces, pantallas gigantes
-            y una atmósfera increíble para disfrutar con amigos o familia.
+        <p class="mb-2">
+            Este concierto promete una experiencia única para los fans. Habrá producción, luces
+            y un ambiente ideal para ir con amigos o familia.
         </p>
 
-        <p>
-            Se recomienda llegar con anticipación para evitar filas y asegurar una buena
-            ubicación dentro del recinto. También habrá zonas de comida, bebidas y
-            mercancía oficial del artista.
-        </p>
-
+        <ul class="mb-0">
+            <li>Llega con anticipación para evitar filas.</li>
+            <li>Revisa accesos y estacionamiento del recinto.</li>
+            <li>Habrá comida, bebidas y mercancía oficial.</li>
+        </ul>
     </div>
 
 </div>
-
 @endsection

@@ -24,7 +24,7 @@
                     El fenómeno global del reggaetón llega con su gira mundial
                     interpretando sus mayores éxitos y una producción espectacular.
                 </p>
-
+  
                 <a href="{{ route('conciertos.show', 'vibra-fest-2026') }}" class="btn btn-primary w-100">
                     Ver detalles
                 </a>

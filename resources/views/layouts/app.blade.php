@@ -266,6 +266,64 @@ footer{
 .card.h-100 .btn{
     margin-top: auto;
 }
+.imagen-concierto{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b1630;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.imagen-concierto img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+<style>
+  /* Card bonita */
+  .artist-card{
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(4,20,45,.08);
+    box-shadow: 0 12px 28px rgba(4,20,45,.10);
+    transition: transform .2s ease, box-shadow .2s ease;
+    height: 100%;
+    background: #fff;
+  }
+  .artist-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(4,20,45,.14);
+  }
+
+  /* Contenedor para que TODAS las imágenes sean iguales y se vean completas */
+  .artist-img-box{
+    height: 220px;                 /* mismo alto en todas */
+    background: #f3f6ff;           /* fondo suave */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  /* Imagen completa sin recorte */
+  .artist-img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;           /* clave: NO recorta */
+    object-position: center;
+    display: block;
+  }
+
+  .artist-desc{
+    color: rgba(4,20,45,.75);
+    font-size: .95rem;
+    margin-bottom: 0;
+  }
+</style>
 
 </style>
 </head>

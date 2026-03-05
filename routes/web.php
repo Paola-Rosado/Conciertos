@@ -17,3 +17,5 @@ Route::get('/artistas/{slug}', [ArtistasController::class, 'show'])->name('artis
 
 Route::get('/boletos', [BoletosController::class, 'index'])->name('boletos.index');
 
+
+
