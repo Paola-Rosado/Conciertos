@@ -143,7 +143,7 @@
             border: 1px solid rgba(4,20,45,.08);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 12px 26px rgba(4,20,45,.10);
+            box-shadow: 0 8px 24px rgba(4,20,45,.08);
             transition: transform .18s ease, box-shadow .18s ease;
             background: white;
         }
@@ -213,16 +213,61 @@
     border-top-right-radius: .5rem;
 }
 
-.card-img-wrap img{
+    .card-img-wrap img{
     width: 100%;
     height: 100%;
-    object-fit: contain;        /* IMPORTANTE: NO recorta */
+    object-fit: contain;
     object-position: center;
-    padding: 10px;              /* para que no pegue a bordes */
+    padding: 10px;
     display: block;
 }
 
-    </style>
+
+.hero{
+    margin-bottom: 80px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.card-soft{
+    transition: all .3s ease;
+}
+
+.card-soft:hover{
+    transform: translateY(-8px) scale(1.02);
+}
+
+.btn-brand{
+    padding: 12px 20px;
+    font-size: 0.95rem;
+}
+
+footer{
+    font-size: 0.9rem;
+    letter-spacing: .3px;
+}
+
+/* ===== EMPUJAR BOTÓN ABAJO EN TARJETAS ===== */
+
+.card.h-100{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.h-100 .card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.h-100 .btn{
+    margin-top: auto;
+}
+
+</style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">

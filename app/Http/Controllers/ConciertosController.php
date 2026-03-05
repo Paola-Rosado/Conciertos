@@ -15,6 +15,7 @@ class ConciertosController extends Controller
             'hora' => '8:00 PM',
             'lugar' => 'Foro Arena - Mérida',
             'precio' => 'Desde $550 MXN',
+            'imagen' => 'img/conciertos/badbunny.png'
         ],
         'noches-de-indie' => [
             'titulo' => 'Noches de Indie',
@@ -24,6 +25,7 @@ class ConciertosController extends Controller
             'hora' => '7:30 PM',
             'lugar' => 'Teatro al Aire Libre',
             'precio' => 'Desde $320 MXN',
+            'imagen' => 'img/conciertos/shakira.jpg'
         ],
         'electro-beach-night' => [
             'titulo' => 'Electro Beach Night',
@@ -33,6 +35,7 @@ class ConciertosController extends Controller
             'hora' => '9:00 PM',
             'lugar' => 'Playa - Progreso',
             'precio' => 'Desde $450 MXN',
+            'imagen' => 'img/conciertos/LatinMafia.jpg'
         ],
     ];
 

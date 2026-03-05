@@ -27,7 +27,9 @@
                         interpretando sus mayores éxitos y una producción espectacular.
                     </p>
 
-                    <a href="#" class="btn btn-primary w-100">Ver detalles</a>
+                    <a href="{{ route('conciertos.show', 'vibra-fest-2026') }}" class="btn btn-primary w-100">
+                    Ver detalles
+                    </a>
                 </div>
             </div>
         </div>
@@ -50,7 +52,9 @@
                         "Las Mujeres no lloran, las Mujeres facturan"
                     </p>
 
-                    <a href="#" class="btn btn-primary w-100">Ver detalles</a>
+                   <a href="{{ route('conciertos.show', 'noches-de-indie') }}" class="btn btn-primary w-100">
+                    Ver detalles
+                    </a>
                 </div>
             </div>
         </div>
@@ -72,7 +76,9 @@
                         ofrecer una noche única llena de emoción y música.
                     </p>
 
-                    <a href="#" class="btn btn-primary w-100">Ver detalles</a>
+                    <a href="{{ route('conciertos.show', 'electro-beach-night') }}" class="btn btn-primary w-100">
+                    Ver detalles
+                    </a>
                 </div>
             </div>
         </div>
