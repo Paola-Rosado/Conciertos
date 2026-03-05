@@ -284,38 +284,24 @@ footer{
 }
 
 <style>
-  /* Card bonita */
   .artist-card{
-    border-radius: 18px;
+    border-radius: 16px;
     overflow: hidden;
+    box-shadow: 0 12px 26px rgba(4,20,45,.10);
     border: 1px solid rgba(4,20,45,.08);
-    box-shadow: 0 12px 28px rgba(4,20,45,.10);
-    transition: transform .2s ease, box-shadow .2s ease;
     height: 100%;
-    background: #fff;
-  }
-  .artist-card:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 18px 38px rgba(4,20,45,.14);
   }
 
-  /* Contenedor para que TODAS las imágenes sean iguales y se vean completas */
-  .artist-img-box{
-    height: 220px;                 /* mismo alto en todas */
-    background: #f3f6ff;           /* fondo suave */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-  }
-
-  /* Imagen completa sin recorte */
   .artist-img{
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;           /* clave: NO recorta */
-    object-position: center;
+    height: 220px;           /* mismo alto para todas */
+    width: 100%;
+    object-fit: cover;       /* recorta sin deformar */
+    object-position: center; /* centra la foto */
     display: block;
+  }
+
+  .artist-card .card-body{
+    text-align: center;
   }
 
   .artist-desc{
