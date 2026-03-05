@@ -7,13 +7,15 @@
   @foreach($artistas as $slug => $a)
     <div class="col-md-4">
       <a href="{{ route('artistas.show', $slug) }}" class="text-decoration-none">
-        <div class="card shadow h-100 border-0">
-          <img src="{{ asset($a['imagen']) }}" class="card-img-top" alt="{{ $a['nombre'] }}">
-          <div class="card-body">
-            <h5 class="text-dark">{{ $a['nombre'] }}</h5>
-            <p class="text-muted">{{ $a['genero'] }}</p>
-          </div>
-        </div>
+        
+        <x-card 
+        :imagen="$a['imagen']"
+        :titulo="$a['nombre']">
+
+          <p class="text-muted">{{ $a['genero'] }}</p>
+
+        </x-card>
+
       </a>
     </div>
   @endforeach

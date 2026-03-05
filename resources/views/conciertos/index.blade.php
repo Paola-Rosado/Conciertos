@@ -12,75 +12,72 @@
 
         <!-- Bad Bunny -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <div class="card-img-wrap">
-                    <img src="{{ asset('img/conciertos/badbunny.png') }}" alt="Bad Bunny">
-                </div>
 
-                <div class="card-body">
-                    <h5 class="card-title">Bad Bunny World Tour</h5>
-                    <span class="badge bg-primary">Sáb 15 junio • 9:00 PM</span>
-                    <span class="badge bg-info text-dark">Estadio Azteca • CDMX</span>
+            <x-card 
+            :imagen="'img/conciertos/badbunny.png'"
+            titulo="Bad Bunny World Tour">
 
-                    <p class="mt-3">
-                        El fenómeno global del reggaetón llega con su gira mundial
-                        interpretando sus mayores éxitos y una producción espectacular.
-                    </p>
+                <span class="badge bg-primary">Sáb 15 junio • 9:00 PM</span>
+                <span class="badge bg-info text-dark">Estadio Azteca • CDMX</span>
 
-                    <a href="{{ route('conciertos.show', 'vibra-fest-2026') }}" class="btn btn-primary w-100">
+                <p class="mt-3">
+                    El fenómeno global del reggaetón llega con su gira mundial
+                    interpretando sus mayores éxitos y una producción espectacular.
+                </p>
+
+                <a href="{{ route('conciertos.show', 'vibra-fest-2026') }}" class="btn btn-primary w-100">
                     Ver detalles
-                    </a>
-                </div>
-            </div>
+                </a>
+
+            </x-card>
+
         </div>
 
         <!-- Shakira -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <div class="card-img-wrap">
-                    <img src="{{ asset('img/conciertos/shakira.jpg') }}" alt="Shakira">
-                </div>
 
-                <div class="card-body">
-                    <h5 class="card-title">Shakira - Las Mujeres Ya No Lloran Tour</h5>
-                    <span class="badge bg-primary">Vie 05 julio • 8:30 PM</span>
-                    <span class="badge bg-info text-dark">Foro Sol • CDMX</span>
+            <x-card 
+            :imagen="'img/conciertos/shakira.jpg'"
+            titulo="Shakira - Las Mujeres Ya No Lloran Tour">
 
-                    <p class="mt-3">
-                        Shakira regresa a los escenarios con un espectáculo lleno de
-                        energía, baile y todos sus grandes éxitos.
-                        "Las Mujeres no lloran, las Mujeres facturan"
-                    </p>
+                <span class="badge bg-primary">Vie 05 julio • 8:30 PM</span>
+                <span class="badge bg-info text-dark">Foro Sol • CDMX</span>
 
-                   <a href="{{ route('conciertos.show', 'noches-de-indie') }}" class="btn btn-primary w-100">
+                <p class="mt-3">
+                    Shakira regresa a los escenarios con un espectáculo lleno de
+                    energía, baile y todos sus grandes éxitos.
+                    "Las Mujeres no lloran, las Mujeres facturan"
+                </p>
+
+                <a href="{{ route('conciertos.show', 'noches-de-indie') }}" class="btn btn-primary w-100">
                     Ver detalles
-                    </a>
-                </div>
-            </div>
+                </a>
+
+            </x-card>
+
         </div>
 
         <!-- Latin Mafia -->
         <div class="col-md-4">
-            <div class="card shadow-sm h-100">
-                <div class="card-img-wrap">
-                    <img src="{{ asset('img/conciertos/LatinMafia.jpg') }}" alt="Latin Mafia">
-                </div>
 
-                <div class="card-body">
-                    <h5 class="card-title">Latin Mafia Live</h5>
-                    <span class="badge bg-primary">Sáb 20 julio • 8:00 PM</span>
-                    <span class="badge bg-info text-dark">Auditorio Nacional • CDMX</span>
+            <x-card 
+            :imagen="'img/conciertos/LatinMafia.jpg'"
+            titulo="Latin Mafia Live">
 
-                    <p class="mt-3">
-                        Latin Mafia llega con su sonido alternativo y urbano para
-                        ofrecer una noche única llena de emoción y música.
-                    </p>
+                <span class="badge bg-primary">Sáb 20 julio • 8:00 PM</span>
+                <span class="badge bg-info text-dark">Auditorio Nacional • CDMX</span>
 
-                    <a href="{{ route('conciertos.show', 'electro-beach-night') }}" class="btn btn-primary w-100">
+                <p class="mt-3">
+                    Latin Mafia llega con su sonido alternativo y urbano para
+                    ofrecer una noche única llena de emoción y música.
+                </p>
+
+                <a href="{{ route('conciertos.show', 'electro-beach-night') }}" class="btn btn-primary w-100">
                     Ver detalles
-                    </a>
-                </div>
-            </div>
+                </a>
+
+            </x-card>
+
         </div>
 
     </div>
