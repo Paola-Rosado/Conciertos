@@ -1,23 +1,31 @@
 @extends('layouts.app')
 
 @section('contenido')
-<h2 class="section-title text-center mb-4">Artistas Destacados</h2>
+<div class="container py-2">
 
-<div class="row g-4">
-  @foreach($artistas as $slug => $a)
-    <div class="col-md-4">
-      <a href="{{ route('artistas.show', $slug) }}" class="text-decoration-none">
+    <h2 class="section-title text-center mb-2">Artistas Destacados</h2>
+    <p class="text-center text-muted mb-5">
+        Conoce algunos de los artistas más populares del momento.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+        @foreach($artistas as $artista)
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <x-card 
+                imagen="{{ $artista['imagen'] }}"
+                titulo="{{ $artista['titulo'] }}"
+                clase="artist-card"
+                bodyClass="text-center"
+            >
+                <small class="text-muted d-block mb-2">{{ $artista['genero'] }}</small>
+                <p class="artist-desc">{{ $artista['descripcion'] }}</p>
+            </x-card>
+        </div>
+        @endforeach
+
         
-        <x-card 
-        :imagen="$a['imagen']"
-        :titulo="$a['nombre']">
-
-          <p class="text-muted">{{ $a['genero'] }}</p>
-
-        </x-card>
-
-      </a>
     </div>
-  @endforeach
+
 </div>
 @endsection

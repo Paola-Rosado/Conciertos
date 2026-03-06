@@ -9,19 +9,19 @@ class BoletosController extends Controller
         $tipos = [
             [
                 'titulo' => 'General',
-                'imagen' => 'img/boletos/general.jpg',
+                'imagen' => 'img/boletos/bol.jpg',
                 'incluye' => ['Acceso al evento', 'Zona general', 'Entrada digital'],
                 'precio' => '$350 MXN'
             ],
             [
                 'titulo' => 'VIP',
-                'imagen' => 'img/boletos/vip.jpg',
+                'imagen' => 'img/boletos/bol.jpg',
                 'incluye' => ['Acceso preferente', 'Zona VIP', 'Bebida de cortesía'],
                 'precio' => '$850 MXN'
             ],
             [
                 'titulo' => 'Meet & Greet',
-                'imagen' => 'img/boletos/meet.jpg',
+                'imagen' => "img/boletos/bol.jpg",
                 'incluye' => ['Foto con artista', 'Souvenir', 'Acceso VIP'],
                 'precio' => '$1,500 MXN'
             ],
