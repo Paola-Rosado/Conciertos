@@ -64,7 +64,7 @@ class ConciertosController extends Controller
 
     public function index()
     {
-        return view('layouts.conciertos.index', [
+        return view('conciertos.index', [
             'conciertos' => $this->conciertos
         ]);
     }
@@ -73,7 +73,7 @@ class ConciertosController extends Controller
     {
         abort_unless(isset($this->conciertos[$slug]), 404);
 
-        return view('layouts.conciertos.show', [
+        return view('conciertos.show', [
             'concierto' => $this->conciertos[$slug]
         ]);
     }

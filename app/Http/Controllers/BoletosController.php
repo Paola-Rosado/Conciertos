@@ -27,6 +27,6 @@ class BoletosController extends Controller
             ],
         ];
 
-        return view('layouts.boletos.index', ['tipos' => $tipos]);
+        return view('boletos.index', ['tipos' => $tipos]);
     }
 }

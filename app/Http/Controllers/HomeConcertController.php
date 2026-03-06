@@ -6,6 +6,6 @@ class HomeConcertController extends Controller
 {
     public function index()
     {
-        return view('layouts.home.index');
+        return view('home.index');
     }
 }
