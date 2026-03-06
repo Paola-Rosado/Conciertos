@@ -13,8 +13,6 @@ Route::get('/conciertos', [ConciertosController::class, 'index'])->name('concier
 Route::get('/conciertos/{slug}', [ConciertosController::class, 'show'])->name('conciertos.show');
 
 Route::get('/artistas', [ArtistasController::class, 'index'])->name('artistas.index');
-Route::get('/artistas/{slug}', [ArtistasController::class, 'show'])->name('artistas.show');
-
 Route::get('/boletos', [BoletosController::class, 'index'])->name('boletos.index');
 
 
