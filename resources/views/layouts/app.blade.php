@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Conciertos')</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>@yield('title','Conciertos')</title>
 
-    <style>
-        :root{
-            --navy:#04142d;
-            --blue:#062df6;
-            --blue2:#2f6ff3;
-            --sky:#52b9f4;
-            --mint:#70f1d5;
-            --gray:#cccccc;
-            --bg:#f7f9fc;
-        }
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        body{
-            background: var(--bg);
-            color: var(--navy);
-        }
+<style>
 
+/* VARIABLES DE COLOR */
+
+:root{
+--navy:#04142d;
+--blue:#062df6;
+--blue2:#2f6ff3;
+--sky:#52b9f4;
+--mint:#70f1d5;
+--gray:#cccccc;
+--bg:#f7f9fc;
+}
+
+body{
+background:var(--bg);
+color:var(--navy);
+}
         /* NAVBAR */
         .navbar-custom{
             background: linear-gradient(90deg, var(--navy), var(--blue));
@@ -170,10 +173,12 @@
             box-shadow: 0 20px 42px rgba(4,20,45,.14);
         }
         .card-event .event-img{
-            height: 190px;
-            object-fit: cover;
+            height: 220px;
             width: 100%;
-            display: block;
+            object-fit: contain;   /* muestra la imagen completa */
+            object-position: center;
+            background: #0b1630;
+            padding: 10px;
         }
 
         /* BADGES */
@@ -311,19 +316,19 @@ footer{
   }
 </style>
 
-</style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-    @include('components.header')
+@include('components.header')
 
-    <main class="container my-4 flex-fill">
-        @yield('contenido')
-    </main>
+<main class="container my-4 flex-fill">
+@yield('contenido')
+</main>
 
-    @include('components.footer')
+@include('components.footer')
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

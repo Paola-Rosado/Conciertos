@@ -8,6 +8,7 @@
         <div class="row g-0">
 
             {{-- Imagen --}}
+            
            <div class="col-md-5 d-flex justify-content-center align-items-center">
 
     <div class="imagen-concierto">
@@ -29,20 +30,17 @@
                 </p>
 
                 {{-- Badges (resumen rápido) --}}
-                <div class="d-flex flex-wrap gap-2 mb-4">
-                    <span class="badge badge-date px-3 py-2">
-                        {{ $concierto['fecha'] }}
-                    </span>
+        <div class="d-flex gap-2 mb-2">
 
-                    <span class="badge badge-date px-3 py-2">
-                         {{ $concierto['hora'] }}
-                    </span>
+            <span class="badge badge-date">
+            {{ $concierto['fecha'] }} • {{ $concierto['hora'] }}
+            </span>
 
-                    <span class="badge badge-place px-3 py-2">
-                         {{ $concierto['lugar'] }} • {{ $concierto['ciudad'] ?? 'CDMX' }}
-                    </span>
+            <span class="badge badge-place">
+            {{ $concierto['lugar'] }}
+            </span>
 
-                </div>
+            </div>
 
                 {{-- Lista más formal --}}
                 <div class="bg-light rounded-4 p-3 mb-4" style="border:1px solid rgba(4,20,45,.08);">

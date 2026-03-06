@@ -21,9 +21,14 @@
                 >
 
                     {{-- Badges con fecha y lugar --}}
-                    <span class="badge bg-primary">{{ $concierto['fecha'] }} • {{ $concierto['hora'] }}</span>
-                    <span class="badge bg-info text-dark">{{ $concierto['lugar'] }}</span>
-
+        <div class="d-flex gap-2 mb-2">
+                <span class="badge bg-primary">
+                    {{ $concierto['fecha'] }} • {{ $concierto['hora'] }}
+                </span>
+                <span class="badge bg-info text-dark">
+                    {{ $concierto['lugar'] }}
+                </span>
+            </div>
                     {{-- Descripción breve --}}
                     <p class="mt-3">{{ $concierto['descripcion'] }}</p>
 

@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const tipo = btn.dataset.tipo;
             const precio = btn.dataset.precio;
 
-            alert(`Compra\n\nBoleto: ${tipo}\nPrecio: $${precio} MXN\n\n(Esto es solo una simulación)`);
+            alert(`Compra\n\nBoleto: ${tipo}\nPrecio: $${precio} MXN`);
 
             // Cambiar el botón para que se note la compra
             btn.textContent = 'Comprado';

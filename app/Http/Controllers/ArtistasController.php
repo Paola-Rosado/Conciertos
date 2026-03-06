@@ -57,6 +57,6 @@ class ArtistasController extends Controller
             ],
         ];
 
-        return view('artistas.index', compact('artistas'));
+        return view('layouts.artistas.index', compact('artistas'));
     }
 }
