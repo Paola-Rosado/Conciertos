@@ -175,7 +175,7 @@ color:var(--navy);
         .card-event .event-img{
             height: 220px;
             width: 100%;
-            object-fit: contain;   /* muestra la imagen completa */
+            object-fit: contain;   
             object-position: center;
             background: #0b1630;
             padding: 10px;
@@ -208,8 +208,8 @@ color:var(--navy);
         }
 
         .card-img-wrap{
-    height: 240px;              /* mismo alto para todas */
-    background: #0b1b3a;        /* un fondo oscuro bonito */
+    height: 240px;              
+    background: #0b1b3a;        
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,7 +256,7 @@ footer{
     letter-spacing: .3px;
 }
 
-/* ===== EMPUJAR BOTÓN ABAJO EN TARJETAS ===== */
+
 
 .card.h-100{
     display: flex;
@@ -288,7 +288,6 @@ footer{
     object-fit:contain;
 }
 
-<style>
   .artist-card{
     border-radius: 16px;
     overflow: hidden;
@@ -298,10 +297,10 @@ footer{
   }
 
   .artist-img{
-    height: 220px;           /* mismo alto para todas */
+    height: 220px;           
     width: 100%;
-    object-fit: cover;       /* recorta sin deformar */
-    object-position: center; /* centra la foto */
+    object-fit: cover;       
+    object-position: center; 
     display: block;
   }
 

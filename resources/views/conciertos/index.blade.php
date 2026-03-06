@@ -10,7 +10,7 @@
 
     <div class="row g-4 justify-content-center">
 
-        {{-- Loop de conciertos --}}
+        {{-- conciertos --}}
         @foreach($conciertos as $slug => $concierto)
             <div class="col-md-4">
 
@@ -20,7 +20,7 @@
                     clase="border-0"
                 >
 
-                    {{-- Badges con fecha y lugar --}}
+                    {{-- fecha y lugar --}}
         <div class="d-flex gap-2 mb-2">
                 <span class="badge bg-primary">
                     {{ $concierto['fecha'] }} • {{ $concierto['hora'] }}
@@ -32,7 +32,7 @@
                     {{-- Descripción breve --}}
                     <p class="mt-3">{{ $concierto['descripcion'] }}</p>
 
-                    {{-- Botón para ver detalle --}}
+                    {{-- Botón para ver detalles --}}
                     <a href="{{ route('conciertos.show', $slug) }}" class="btn btn-primary w-100">
                         Ver detalles
                     </a>

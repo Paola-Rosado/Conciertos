@@ -8,7 +8,6 @@
         <div class="row g-0">
 
             {{-- Imagen --}}
-            
            <div class="col-md-5 d-flex justify-content-center align-items-center">
 
     <div class="imagen-concierto">
@@ -29,7 +28,7 @@
                     {{ $concierto['descripcion'] }}
                 </p>
 
-                {{-- Badges (resumen rápido) --}}
+                {{--resumen  --}}
         <div class="d-flex gap-2 mb-2">
 
             <span class="badge badge-date">
@@ -42,7 +41,7 @@
 
             </div>
 
-                {{-- Lista más formal --}}
+                {{-- Lista --}}
                 <div class="bg-light rounded-4 p-3 mb-4" style="border:1px solid rgba(4,20,45,.08);">
                     <div class="row">
                         <div class="col-sm-6 mb-2">
@@ -76,7 +75,7 @@
         </div>
     </div>
 
-    {{-- Card extra --}}
+    {{-- Card ex--}}
     <div class="card mt-4 shadow-sm border-0 p-4">
         <h4 class="fw-bold mb-3">Detalles del evento</h4>
 
